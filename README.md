@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### website-certifiedrice (Work in Progress)
+This is the 3rd version of my website!\
+In my new website I'll be using TailwindCSS instead of regular CSS\
+More features and cleaner UI!
 
 ## Getting Started
 
