@@ -34,8 +34,7 @@ export default function Home() {
 
         <div>
           <h1 class="text-center text-4xl">About me!</h1>
-          <p>
-            <p class="text-xl text-center">CertifiedRice is a passionate and freelance Web and Game Developer!</p></p>
+          <p class="text-xl text-center">CertifiedRice is a passionate and freelance Web and Game Developer!</p>
 
           <div class="flex space-x-2 justify-center">
             <a href="./about">
