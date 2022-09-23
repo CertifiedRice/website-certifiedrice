@@ -1,16 +1,28 @@
+import { motion } from "framer-motion";
+
 export default function Work() {
     return (
         <div>
             <h1 class="text-center text-2xl">My work and portfolio!</h1>
 
+            <motion.div whileHover={{
+                position: 'realtive',
+                zIndex: 1,
+                scale: [1, 1.4, 1.2],
+                rotate: [0, 10, -10, 0],
+                transition: {
+                    duration: .2
+                }
+            }}>
+                
             <div class="flex justify-center">
-                <div class="rounded-lg shadow-lg bg-white max-w-sm">
+                <div class="rounded-lg shadow-lg bg-gray-700 max-w-sm">
                     <a href="#!">
                         <img class="rounded-t-lg" src="https://i.gyazo.com/b4eee95a1919189f6b94e8f981aa03c3.png" alt="" />
                     </a>
                     <div class="p-6">
-                        <h5 class="text-gray-900 text-xl font-medium mb-2">Fried-Aim</h5>
-                        <p class="text-gray-700 text-base mb-4">
+                        <h5 class="text-white text-xl font-medium mb-2">Fried-Aim</h5>
+                        <p class="text-white text-base mb-4">
                             Unity 3D FPS Aim Trainer Game
                         </p>
                         <a href="https://github.com/CertifiedRice/Fried-Aim">
@@ -19,6 +31,7 @@ export default function Work() {
                     </div>
                 </div>
             </div>
+            </motion.div>
         </div>
     )
 }
