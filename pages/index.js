@@ -63,7 +63,11 @@ export default function Home() {
 
           <p class="text-xl text-center">I am Vietnamese!</p>
           <p class="text-xl text-center">A man of rice 🍚🥟🍣💻✈️</p>
-          <p class="text-xl text-center">More coming soon of BIO!</p>
+
+          <ul class="list-item">
+            <li class="text-center">2020 - Self taught programming and game development</li>
+            <li class="text-center">2022 - Started learning Web Development and game development with Unity</li>
+          </ul>
         </div>
 
         <hr></hr>
