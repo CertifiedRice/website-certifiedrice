@@ -1,20 +1,7 @@
-import { motion } from "framer-motion";
-
 export default function Work() {
     return (
         <div>
             <h1 class="text-center text-2xl">My work and portfolio!</h1>
-
-            <motion.div whileHover={{
-                position: 'realtive',
-                zIndex: 1,
-                scale: [1, 1.4, 1.2],
-                rotate: [0, 10, -10, 0],
-                transition: {
-                    duration: .2
-                }
-            }}>
-
                 <div class="flex justify-center">
                     <div class="rounded-lg shadow-lg bg-gray-700 max-w-sm">
                         <a href="#!">
@@ -31,17 +18,7 @@ export default function Work() {
                         </div>
                     </div>
                 </div>
-            </motion.div>
             {/* -------- */}
-            <motion.div whileHover={{
-                position: 'realtive',
-                zIndex: 1,
-                scale: [1, 1.4, 1.2],
-                rotate: [0, 10, -10, 0],
-                transition: {
-                    duration: .2
-                }
-            }}>
                 
             <div class="flex justify-center">
                 <div class="rounded-lg shadow-lg bg-gray-700 max-w-sm">
@@ -59,7 +36,6 @@ export default function Work() {
                     </div>
                 </div>
             </div>
-            </motion.div>
         </div>
     )
 }

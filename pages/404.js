@@ -1,20 +1,8 @@
-import { motion } from 'framer-motion'
-
 export default function Error() {
     return (
         <div>
             <h1 class="text-center text-2xl">404 ERROR</h1>
             <p class="text-center">Looks like this page was not found!</p>
-
-            <motion.div whileHover={{
-                position: 'realtive',
-                zIndex: 1,
-                scale: [1, 1.4, 1.2],
-                rotate: [0, 10, -10, 0],
-                transition: {
-                    duration: .2
-                }
-            }}>
                 <div class="flex justify-center">
                     <div class="block p-6 rounded-lg shadow-lg bg-slate-700">
                         <h5 class="text-white text-xl leading-tight font-medium mb-2">Return Home</h5>
@@ -24,7 +12,6 @@ export default function Error() {
                         </a>
                     </div>
                 </div>
-            </motion.div>
         </div>
     )
 }

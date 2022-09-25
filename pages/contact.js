@@ -1,19 +1,7 @@
-import { motion, AnimatePresence } from "framer-motion";
-
 export default function Contact() {
     return (
         <div>
             <h1 class="text-center text-2xl">Contact Me!</h1>
-
-            <motion.div whileHover={{
-                position: 'realtive',
-                zIndex: 1,
-                scale: [1, 1.4, 1.2],
-                rotate: [0, 10, -10, 0],
-                transition: {
-                    duration: .2
-                }
-            }}>
                 <div class="flex justify-center">
                     <div class="block p-6 rounded-lg shadow-lg bg-slate-600 max-w-sm">
                         <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Discord</h5>
@@ -25,17 +13,7 @@ export default function Contact() {
                         </a>
                     </div>
                 </div>
-            </motion.div>
 
-            <motion.div whileHover={{
-                position: 'realtive',
-                zIndex: 1,
-                scale: [1, 1.4, 1.2],
-                rotate: [0, 10, -10, 0],
-                transition: {
-                    duration: .2
-                }
-            }}>
                 <div class="flex justify-center">
                     <div class="block p-6 rounded-lg shadow-lg bg-slate-600 max-w-sm">
                         <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Email</h5>
@@ -48,7 +26,6 @@ export default function Contact() {
                     </div>
                 </div>
 
-            </motion.div>
         </div>
     )
 }

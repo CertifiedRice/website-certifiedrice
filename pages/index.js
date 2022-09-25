@@ -1,35 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { motion, AnimatePresence } from "framer-motion";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <motion.div initial="hidden" animate="visible" variants={{
-        hidden: {
-          scale: .20,
-          opacity: 0
-        },
-        visible: {
-          scale: 1,
-          opacity: 1,
-          transition: {
-            delay: .25
-          }
-        }
-      }}>
-        <motion.div whileHover={{
-          position: 'realtive',
-          zIndex: 1,
-          scale: [1, 1.4, 1.2],
-          rotate: [0, 10, -10, 0],
-          transition: {
-            duration: .2
-          }
-        }}>
           <h1 class="text-center text-6xl">CertifiedRice</h1>
-        </motion.div>
         <hr></hr>
 
         <div>
@@ -48,18 +22,7 @@ export default function Home() {
         </div>
 
         <div id="bio">
-          {/* ToDo: Finish bio! */}
-          <motion.div whileHover={{
-            position: 'realtive',
-            zIndex: 1,
-            scale: [1, 1.4, 1.2],
-            rotate: [0, 10, -10, 0],
-            transition: {
-              duration: .2
-            }
-          }}>
             <h1 class="text-center text-4xl">Bio!</h1>
-          </motion.div>
 
           <p class="text-xl text-center">I am Vietnamese!</p>
           <p class="text-xl text-center">A man of rice 🍚🥟🍣💻✈️</p>
@@ -74,7 +37,6 @@ export default function Home() {
         </div>
 
         <hr></hr>
-      </motion.div>
     </div>
   )
 }

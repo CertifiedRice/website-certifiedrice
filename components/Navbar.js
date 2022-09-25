@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
-import Script from 'next/script' //Olspe: imported this in so I could import ionic-icons
 
 const Navbar = () => {
     return (

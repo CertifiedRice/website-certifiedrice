@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 
 export default function About() {
     return (
@@ -12,16 +11,6 @@ export default function About() {
                 <p class="text-xl text-center">CertifiedRice is a Full-Stack Web Developer based in the United States!</p>
 
                 <p class="text-xl text-center">He is a self-taught programmer and game developer!</p>
-
-        <motion.div whileHover={{
-            position: 'realtive',
-            zIndex: 1,
-            scale: [1, 1.4, 1.2],
-            rotate: [0, 10, -10, 0],
-            transition: {
-              duration: .2
-            }
-          }}>
                 <div class="flex justify-center">
                 <div class="block p-6 rounded-lg shadow-lg bg-slate-600 max-w-sm">
                     <h5 class="text-white text-xl leading-tight font-medium mb-2">My work!</h5>
@@ -33,7 +22,6 @@ export default function About() {
                     </a>
                 </div>
             </div>
-            </motion.div>
         </div>
     )
 }
