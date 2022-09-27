@@ -87,7 +87,7 @@ a {
 }
 
 .post-date {
-  background: grey;
+  background: #212529;
   margin-bottom: 20px;
   padding: 3px 10px;
 }
@@ -101,7 +101,7 @@ ol {
 }
 
 .post-body pre {
-  background: #f4f4f4;
+  background: black;
   padding: 20px;
   margin: 20px 0;
   line-height: 2.3;
