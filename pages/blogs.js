@@ -23,11 +23,20 @@ export default function Blogs({ posts }) {
         }
       }}>
 
-        <div className='posts'>
-          {posts.map((post, index) => (
-            <Post key={index} post={post} />
-          ))}
-        </div>
+        <motion.div whileHover={{
+          position: 'realtive',
+          zIndex: 1,
+          scale: [1,1.2,1],
+          transition: {
+            duration: .2
+          }
+        }}>
+          <div className='posts'>
+            {posts.map((post, index) => (
+              <Post key={index} post={post} />
+            ))}
+          </div>
+        </motion.div>
       </motion.div>
     </div>
   )
