@@ -1,8 +1,24 @@
+import { motion } from "framer-motion"
+
 export default function Error() {
     return (
         <div>
-            <h1 class="text-center text-2xl">404 ERROR</h1>
-            <p class="text-center">Looks like this page was not found!</p>
+            <motion.div initial="pageInitial" animate="pageAnimate" exit="pageExit" transition={{ duration: .7, type: 'easeInOut' }} style={{ position: 'relative' }} variants={{
+                pageInitial: {
+                    opacity: 0,
+                },
+                pageAnimate: {
+                    opacity: [0, 1],
+                    scale: [1, 1.03, 1]
+                },
+                pageExit: {
+                    backgroundColor: 'white',
+                    filter: `invert()`,
+                    opacity: 0,
+                }
+            }}>
+                <h1 class="text-center text-2xl">404 ERROR</h1>
+                <p class="text-center">Looks like this page was not found!</p>
                 <div class="flex justify-center">
                     <div class="block p-6 rounded-lg shadow-lg bg-slate-700">
                         <h5 class="text-white text-xl leading-tight font-medium mb-2">Return Home</h5>
@@ -12,6 +28,7 @@ export default function Error() {
                         </a>
                     </div>
                 </div>
+            </motion.div>
         </div>
     )
 }

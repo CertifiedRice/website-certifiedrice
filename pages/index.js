@@ -1,9 +1,24 @@
 import styles from '../styles/Home.module.css'
+import { motion } from "framer-motion"
 
 export default function Home() {
   return (
     <div className={styles.container}>
-          <h1 class="text-center text-6xl">CertifiedRice</h1>
+      <motion.div initial="pageInitial" animate="pageAnimate" exit="pageExit" transition={{ duration: .7, type: 'easeInOut' }} style={{ position: 'relative' }} variants={{
+        pageInitial: {
+          opacity: 0,
+        },
+        pageAnimate: {
+          opacity: [0, 1],
+          scale: [1, 1.03, 1]
+        },
+        pageExit: {
+          backgroundColor: 'white',
+          filter: `invert()`,
+          opacity: 0,
+        }
+      }}>
+        <h1 class="text-center text-6xl">CertifiedRice</h1>
         <hr></hr>
 
         <div>
@@ -22,7 +37,7 @@ export default function Home() {
         </div>
 
         <div id="bio">
-            <h1 class="text-center text-4xl">Bio!</h1>
+          <h1 class="text-center text-4xl">Bio!</h1>
 
           <p class="text-xl text-center">I am Vietnamese!</p>
           <p class="text-xl text-center">A man of rice 🍚🥟🍣💻✈️</p>
@@ -37,6 +52,7 @@ export default function Home() {
         </div>
 
         <hr></hr>
+      </motion.div>
     </div>
   )
 }

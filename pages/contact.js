@@ -1,7 +1,23 @@
+import { motion } from "framer-motion"
+
 export default function Contact() {
     return (
         <div>
-            <h1 class="text-center text-2xl">Contact Me!</h1>
+            <motion.div initial="pageInitial" animate="pageAnimate" exit="pageExit" transition={{ duration: .7, type: 'easeInOut' }} style={{ position: 'relative' }} variants={{
+                pageInitial: {
+                    opacity: 0,
+                },
+                pageAnimate: {
+                    opacity: [0, 1],
+                    scale: [1, 1.03, 1]
+                },
+                pageExit: {
+                    backgroundColor: 'white',
+                    filter: `invert()`,
+                    opacity: 0,
+                }
+            }}>
+                <h1 class="text-center text-2xl">Contact Me!</h1>
                 <div class="flex justify-center">
                     <div class="block p-6 rounded-lg shadow-lg bg-slate-600 max-w-sm">
                         <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Discord</h5>
@@ -25,7 +41,7 @@ export default function Contact() {
                         </a>
                     </div>
                 </div>
-
+            </motion.div>
         </div>
     )
 }

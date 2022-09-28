@@ -10,7 +10,7 @@ export default function PostPage({
   content,
 }) {
   return (
-    <>
+    <>z
       <Link href='/'>
         <a className='btn btn-back'>Go Back</a>
       </Link>
