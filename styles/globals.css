@@ -21,6 +21,13 @@ a {
   box-sizing: border-box;
 }
 
+html {
+  color-scheme: dark;
+}
+body {
+  color: white;
+}
+
 .container {
   max-width: 768px;
   margin: auto;
