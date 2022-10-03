@@ -40,7 +40,7 @@ export default function Work() {
                                 Unity 3D FPS Aim Trainer Game
                             </p>
                             <a href="https://github.com/CertifiedRice/Fried-Aim">
-                                <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Source</button>
+                                <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Source</button>
                             </a>
                         </div>
                     </div>
@@ -58,7 +58,7 @@ export default function Work() {
             }}>
                 
             <div class="flex justify-center">
-                <div class="rounded-lg shadow-lg bg-gray-700 max-w-sm">
+                <div class="rounded-lg shadow-lg bg-gray-700 max-w-sm mt-5">
                     <a href="#!">
                         <img class="rounded-t-lg" src="" alt="" />
                     </a>
@@ -68,7 +68,7 @@ export default function Work() {
                             Roblox Interaction with Razer Peripherals and Products RGB Lighting!
                         </p>
                         <a href="https://www.youtube.com/watch?v=0CGDJt5zSPM">
-                            <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Video</button>
+                            <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Video</button>
                         </a>
                     </div>
                 </div>

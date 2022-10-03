@@ -8,6 +8,7 @@ import { motion } from "framer-motion"
 export default function Blogs({ posts }) {
   return (
     <div>
+      <h1 class="text-center">NOTE! The BLOG feature for this website is still a work in progress!</h1>
       <motion.div initial="pageInitial" animate="pageAnimate" exit="pageExit" transition={{ duration: .7, type: 'easeInOut' }} style={{ position: 'relative' }} variants={{
         pageInitial: {
           opacity: 0,
