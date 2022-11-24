@@ -1,4 +1,4 @@
-### website-certifiedrice (Work in Progress)
+### website-certifiedrice 
 This is the 3rd version of my website!\
 In my new website I'll be using TailwindCSS instead of regular CSS\
 More features and cleaner UI!
